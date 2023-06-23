@@ -327,7 +327,7 @@ for iMech = 1:nMech
 end
 
 subplot(5,1,1:4);grid on;box on; ylim([0 nPumps+1]);yticks(1:nPumps+1);yticklabels(sortedPumpNames(nPumps:-1:1));%yticklabels([sortedPumpNames(nPumps:-1:1) 'mech' ]);
-subplot(5,1,5);grid on;box on;P
+subplot(5,1,5);grid on;box on;
 set(gcf,'position',[1 484 1512 382]);
 figure;bar(sum(sortedPumpImpact,2)*-1);grid on; box on;
 % saveas(f1,'pumpsByMechSortedByfam.svg')
